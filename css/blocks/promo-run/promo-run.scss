@@ -1,0 +1,29 @@
+// Для импорта в диспетчер подключений: @import '../blocks/promo-run/promo-run.scss';
+
+
+.promo-run {
+  background-image: url("../../img/girl.jpg");
+  background-size: contain;
+
+  &__text{
+    font-family: $popFont;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+    line-height: 61px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  
+}
+@media screen  and (max-width: 768px){
+  .promo-run{
+    &__text{
+      font-size: 30px;
+      line-height: 38px;
+      margin-top: 0;
+    }
+  }
+}

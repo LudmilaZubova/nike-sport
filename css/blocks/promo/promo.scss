@@ -1,0 +1,59 @@
+// Для импорта в диспетчер подключений: @import '../blocks/promo/promo.scss';
+
+
+.promo {
+  margin-left: 190px;
+  &__title{
+    font-size: 203px;
+    line-height: 147px;
+    margin-top: 20px;
+    font-family: $popFont;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__text{
+    font-family:$monsFont;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: 10px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+  }
+}
+@media (max-width:768px){
+  .promo{
+    margin-left: 100px;
+  }
+  .promo__title{
+    font-size: 100px;
+  }
+
+}
+
+@media screen and (max-width: 1024px){
+  .promo{
+    margin-left: 15px;
+    &__title{
+      font-size: 175px;
+    }
+  }
+}
+@media (max-width:768px){
+  .promo{
+    margin-left: 30px;
+  }
+  .promo__title{
+    font-size: 58px;
+    line-height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+  }
+  .promo__text{
+    font-size: 17px;
+  }
+
+}

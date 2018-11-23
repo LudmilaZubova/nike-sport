@@ -1,0 +1,22 @@
+// Для импорта в диспетчер подключений: @import '../blocks/sotial/sotial.scss';
+
+
+.sotial {
+
+
+  &__search{
+    display: none;
+    &--icon{
+      background-image: url("../../img/search.png");
+      @include icon-position();
+    }
+  }
+  &__bag{
+
+   background-image: url("../../img/cart.png");
+    @include icon-position();
+    width: 30px;
+
+  }
+
+}

@@ -1,0 +1,44 @@
+// Для импорта в диспетчер подключений: @import '../blocks/advantages/advantages.scss';
+
+
+.advantages {
+  border-bottom: 1px solid #eeeeee;
+  &__block {
+    border-right: 2px solid #eeeeee;
+    &:last-child{
+      border-right: none;
+    }
+    &--img{
+      margin-top: 40px;
+      margin-left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    &--title{
+      font-family: $oswaldFont;
+      font-size: 32px;
+      text-transform: uppercase;
+      color: #0d2e57;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &--text{
+      text-align: center;
+      font-size: 13px;
+      font-family: $monsFont;
+      font-weight: 300px;
+      margin-bottom: 15px;
+    }
+    &--link{
+      text-decoration: none;
+      font-family: $monsFont;
+      color: #3753da;
+      margin-bottom: 30px;
+      text-align: center;
+      display: block;
+      &:hover{
+      text-decoration: underline;
+        text-align: center;
+    }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+// Для импорта в диспетчер подключений: @import '../blocks/catalog-card/catalog-card.scss';
+
+
+.catalog-card {
+  border: 1px solid #eeeeee;
+  position: relative;
+  &__img{
+    margin-bottom: 70px;
+    overflow:hidden;
+    max-width: 265px;
+    max-height:200px;
+
+  }
+  &__title{
+    font-family:$oswaldFont ;
+    font-size: 25px;
+    color: $blueDark;
+  }
+  &__price-new,
+  &__old{
+    font-size: 11px;
+    font-family: $monsFont;
+  }
+  &__price-new{
+    color: $blueDark;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  &__old{
+    color: #8a8a8a;
+    font-size: 13px;
+  }
+  &__wrapper{
+    position: absolute;
+    bottom: 2%;
+  }
+  .catalog-card__img {
+      -moz-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      -webkit-transition: all 1s ease-out;
+    &:hover{
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      box-shadow: 0 0 10px 10px #eee;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+  .catalog-card{
+  &__title{
+    font-size: 21px;
+  }
+  }
+}
+}

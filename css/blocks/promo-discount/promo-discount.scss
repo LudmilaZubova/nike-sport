@@ -1,0 +1,33 @@
+// Для импорта в диспетчер подключений: @import '../blocks/promo-discount/promo-discount.scss';
+
+
+.promo-discount {
+  background-color: #232323;
+
+  &__title{
+    color: #ffffff;
+    font-family: $oswaldFont;
+    font-size: 50px;
+    text-transform: uppercase;
+
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .promo-discount{
+    &__title{
+      font-size: 25px;
+      margin-top: 5px;
+    }
+    &__text{
+      margin-bottom: 0;
+  }
+}
+}

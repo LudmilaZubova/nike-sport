@@ -1,0 +1,13 @@
+// Для импорта в диспетчер подключений: @import '../blocks/partners/partners.scss';
+
+
+.partners {
+  &__card{
+    border: 1px solid #eeeeee;
+    padding: 15px;
+  }
+  &__card img{
+    margin: 5px auto;
+  }
+
+}

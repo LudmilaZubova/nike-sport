@@ -1,0 +1,62 @@
+// Для импорта в диспетчер подключений: @import '../blocks/sotial-list/sotial-list.scss';
+
+
+.sotial-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+
+
+
+  &__item{
+    margin-left: 10px;
+    &:hover{
+      transform: rotate(360deg);
+      -moz-transition: all 2s ease-out;
+      -o-transition: all 2s ease-out;
+      -webkit-transition: all 2s ease-out;
+    }
+    
+    &--fb{
+      background-image: url("../../img/fb.png");
+      @include icon-position();
+    }
+    &--tw{
+      background-image: url("../../img/tw.png");
+      @include icon-position();
+    }
+    &--gg{
+      background-image: url("../../img/g+.png");
+      @include icon-position();
+    }
+    &--in{
+      background-image: url("../../img/insta.png");
+      @include icon-position();
+    }
+  }
+  &--footer{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+  }
+  &--header{
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    justify-content: flex-end;
+    padding-right: 12px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .sotial-list{
+    &--header{
+      display: none;
+    }
+  }
+}

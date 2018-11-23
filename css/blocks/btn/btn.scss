@@ -1,0 +1,83 @@
+// Для импорта в диспетчер подключений: @import '../blocks/btn/btn.scss';
+
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  &:hover{
+    opacity: 0.5;
+  }
+  &__promo,
+  &__offer{
+    background-color:$blueLight;
+    &:hover{
+      background-color: #2243e4;
+    }
+  }
+  &__promo{
+    margin-left:8%;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 200px;
+  }
+  &__offer{
+    margin-bottom: 40px;
+  }
+  &__promo-discount{
+    margin: 0;
+    margin-right: auto;
+  }
+  &__promo-run{
+    background-color: #65cbff;
+    margin: 0;
+    margin-right: auto;
+    max-width: 200px;
+  }
+  &__sotial{
+    background-color: $blueLight;
+    margin: 0;
+    margin-right: auto;
+    margin-top: 30px;
+
+  }
+
+}
+.btn{
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    -webkit-transition: all 2s ease-out;
+    &:hover{
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+
+
+
+    }
+}
+@media(max-width:768px){
+  .btn {
+    &__promo {
+      margin-left: 15%;
+    }
+    &__promo-run{
+      margin-bottom:10px;
+    }
+  }
+}
+@media(max-width:425px) {
+  .btn {
+    &__sotial {
+      margin: 20px auto;
+    }
+  }
+}
+
+

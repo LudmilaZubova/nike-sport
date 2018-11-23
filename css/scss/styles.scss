@@ -1,0 +1,27 @@
+
+//одключеине шрифтов
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600,700');
+//подключение блоков
+@import "general";
+@import 'variables.scss';
+@import 'mixins.scss';
+@import '../blocks/main-header/main-header.scss';
+@import '../blocks/main-nav/main-nav.scss';
+@import '../blocks/sotial-list/sotial-list.scss';
+@import '../blocks/promo/promo.scss';
+@import '../blocks/main-content/main-content.scss';
+@import '../blocks/advantages/advantages.scss';
+@import '../blocks/offer/offer.scss';
+@import '../blocks/counter/counter.scss';
+@import '../blocks/btn/btn.scss';
+@import '../blocks/catalog/catalog.scss';
+@import '../blocks/catalog-card/catalog-card.scss';
+@import '../blocks/promo-discount/promo-discount.scss';
+@import '../blocks/promo-run/promo-run.scss';
+@import '../blocks/gallery/gallery.scss';
+@import '../blocks/partners/partners.scss';
+@import '../blocks/main-footer/main-footer.scss';
+@import '../blocks/sotial/sotial.scss';
+@import 'mixins.scss';

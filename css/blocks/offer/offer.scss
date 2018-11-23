@@ -1,0 +1,61 @@
+// Для импорта в диспетчер подключений: @import '../blocks/offer/offer.scss';
+
+
+.offer {
+  background-color:#F2F0F0 ;
+  &__title{
+    text-align: center;
+    &--top{
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-family: $popFont;
+      font-size: 20px;
+      letter-spacing: 10px;
+      color: #616161;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    &--bottom{
+      color: #0d2e57;
+      font-size: 42px;
+      line-height: 44px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+  }
+  &__text{
+    color: #8a8a8a;
+    font-family: $monsFont;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+  &__price{
+    display: flex;
+    justify-content: center;
+  }
+  &__price-new{
+    color: $blueLight;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    margin-right: 20px;
+
+  }
+  &__price-old{
+    font-family: $monsFont;
+    font-size: 32px;
+    line-height: 64px;
+    text-decoration:line-through;
+
+  }
+}
+@media screen and (max-width: 425px) {
+.offer__title--bottom{
+  font-size: 38px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+}
